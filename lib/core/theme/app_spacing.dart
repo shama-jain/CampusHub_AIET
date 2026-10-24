@@ -1,0 +1,36 @@
+import 'package:flutter/material.dart';
+
+class AppSpacing {
+  AppSpacing._();
+  static const double xs = 4;
+  static const double sm = 8;
+  static const double md = 12;
+  static const double lg = 16;
+  static const double xl = 20;
+  static const double xxl = 28;
+  static const double xxxl = 40;
+}
+
+class AppRadius {
+  AppRadius._();
+  static const double sm = 10;
+  static const double md = 14;
+  static const double lg = 18;
+  static const double xl = 24;
+  static const double pill = 100;
+}
+
+class AppShadows {
+  AppShadows._();
+
+  /// Resting cards: barely-there lift so white cards separate from the
+  /// light background without heavy borders.
+  static const List<BoxShadow> card = [
+    BoxShadow(color: Color(0x0D1E3A8A), blurRadius: 16, offset: Offset(0, 4)),
+  ];
+
+  /// Floating elements (bottom bars, logo tiles, selected states).
+  static const List<BoxShadow> raised = [
+    BoxShadow(color: Color(0x1A1E3A8A), blurRadius: 28, offset: Offset(0, 10)),
+  ];
+}
